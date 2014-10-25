@@ -6,7 +6,7 @@ This service provides LDAP authentication for nginx via the [http_auth_request A
 
 `go get -u github.com/presbrey/nginx-auth-request-ldap`
 
-Use [supervisord](supervisord.org) to keep `nginx-auth-request-ldap` running with `autorestart=true`.
+Use systemd or [supervisord](supervisord.org) to daemonize `nginx-auth-request-ldap`.
 
 ## Features
 
